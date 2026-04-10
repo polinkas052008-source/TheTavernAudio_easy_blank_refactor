@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{75e98f44-adf6-477b-bbea-499ea5f9fe5c}">
+		<property name="assetPath">
+			<value>One-shots/Footsteps/Stone/jump_land_stone_04.flac</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.625</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{357713a4-2f7b-4ba9-9585-8fd4617147df}</destination>
+		</relationship>
+	</object>
+</objects>
