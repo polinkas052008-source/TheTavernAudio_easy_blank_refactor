@@ -43,10 +43,10 @@ MonoBehaviour:
   Path: Tavern-Project-FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639114143362262118
+  lastModified: 639126259032950833
   FileSizes:
   - Name: Desktop
-    Value: 1216
+    Value: 1352
   Exists: 1
 --- !u!114 &-5942761676495002344
 MonoBehaviour:
@@ -201,7 +201,6 @@ MonoBehaviour:
   - {fileID: -6837551673720044762}
   - {fileID: 7066848009678602385}
   EditorEvents:
-  - {fileID: 124098560457152945}
   - {fileID: 3713468652453882783}
   - {fileID: -9023218234546299624}
   - {fileID: -5942761676495002344}
@@ -210,59 +209,36 @@ MonoBehaviour:
   - {fileID: -558315150200894282}
   - {fileID: 9130409819142047876}
   - {fileID: -5771275010311375258}
+  - {fileID: 4647272861905584499}
+  - {fileID: 1419837850586253282}
   EditorParameters: []
   MasterBanks:
   - {fileID: 7066848009678602385}
   StringsBanks:
   - {fileID: -6837551673720044762}
   cacheVersion: 131859
-  cacheTime: 639114143362262118
+  cacheTime: 639126259032950833
   SerializableEventsDict:
-  - key: event:/music
-    index: 0
   - key: event:/amb-tavern
-    index: 1
+    index: 0
   - key: event:/jump
-    index: 2
+    index: 1
   - key: event:/land
-    index: 3
+    index: 2
   - key: event:/footsteps
-    index: 4
+    index: 3
   - key: event:/amb-fire
-    index: 5
+    index: 4
   - key: event:/door
-    index: 6
+    index: 5
   - key: event:/amb-tavern-music
-    index: 7
+    index: 6
   - key: event:/amb_forest
+    index: 7
+  - key: snapshot:/Inside
     index: 8
---- !u!114 &124098560457152945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/music
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/music
-  Guid:
-    Data1: -1167012337
-    Data2: 1336592209
-    Data3: 848363183
-    Data4: 1912880456
-  Banks:
-  - {fileID: 7066848009678602385}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 236250
+  - key: snapshot:/Outside
+    index: 9
 --- !u!114 &806701643321209143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -316,6 +292,33 @@ MonoBehaviour:
   - Open
   - Close
   Exists: 1
+--- !u!114 &1419837850586253282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Outside
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: snapshot:/Outside
+  Guid:
+    Data1: -642510224
+    Data2: 1219296323
+    Data3: 300264091
+    Data4: -1974964633
+  Banks:
+  - {fileID: 7066848009678602385}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &3713468652453882783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -343,6 +346,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 59500
+--- !u!114 &4647272861905584499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Inside
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: snapshot:/Inside
+  Guid:
+    Data1: 835996936
+    Data2: 1167558590
+    Data3: 504460949
+    Data4: 2051498258
+  Banks:
+  - {fileID: 7066848009678602385}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &5925938277123498852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,10 +440,10 @@ MonoBehaviour:
   Path: Tavern-Project-FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639114143362252220
+  lastModified: 639126259032925694
   FileSizes:
   - Name: Desktop
-    Value: 8764544
+    Value: 5810304
   Exists: 1
 --- !u!114 &9130409819142047876
 MonoBehaviour:

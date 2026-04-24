@@ -19,7 +19,7 @@ public class Footsteps : MonoBehaviour
     // Usunięto: private Dictionary<string, string> surfaceTags;
 
     private float lastFootstepTime = 0f;
-    private float distToGround;
+    private float distToGround = 0f;
 
     [SerializeField]
     private bool isGrounded = true;
@@ -137,25 +137,26 @@ public class Footsteps : MonoBehaviour
     private void PlaySurfaceSound(FMOD.Studio.EventInstance soundInstance, EventReference eventRef, string surfaceTag)
     {
         // Zmienna przechowująca parametr FMOD. Domyślnie ustawiona na null/pusty string.
-        string surfaceParameter = null; 
+        string surfaceParameter = null;
 
+        Debug.Log(surfaceTag);
         // Instrukcja SWITCH do mapowania Tagu na Parametr FMOD.
         switch (surfaceTag)
         {
             case "Stone":
             case "Inside_stone":
             case "Outside": // "Outside" również używa parametru "Stone"
-                surfaceParameter = "Stone";
+                surfaceParameter = "stone";
                 break;
             
             case "Wood":
             case "Inside_wood":
-                surfaceParameter = "Wood";
+                surfaceParameter = "wood";
                 break;
 
-            case "Bed":
-                surfaceParameter = "Bed";
-                break;
+                //case "Bed":
+                //    surfaceParameter = "Bed";
+                //    break;
         }
 
         // Jeśli znaleziono pasujący parametr, odtwórz dźwięk.
@@ -164,7 +165,7 @@ public class Footsteps : MonoBehaviour
             soundInstance = RuntimeManager.CreateInstance(eventRef);
             soundInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject.transform));
             // Ustawia parametr FMOD na podstawie ustalonej wartości.
-            soundInstance.setParameterByNameWithLabel("Footsteps_surface", surfaceParameter); 
+            soundInstance.setParameterByNameWithLabel("Footsteps Surface", surfaceParameter); 
             soundInstance.start();
             soundInstance.release();
         }
