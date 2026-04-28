@@ -43,10 +43,10 @@ MonoBehaviour:
   Path: Tavern-Project-FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639126259032950833
+  lastModified: 639129777202447617
   FileSizes:
   - Name: Desktop
-    Value: 1352
+    Value: 1302
   Exists: 1
 --- !u!114 &-5942761676495002344
 MonoBehaviour:
@@ -209,7 +209,6 @@ MonoBehaviour:
   - {fileID: -558315150200894282}
   - {fileID: 9130409819142047876}
   - {fileID: -5771275010311375258}
-  - {fileID: 4647272861905584499}
   - {fileID: 1419837850586253282}
   EditorParameters: []
   MasterBanks:
@@ -217,7 +216,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -6837551673720044762}
   cacheVersion: 131859
-  cacheTime: 639126259032950833
+  cacheTime: 639129777202447617
   SerializableEventsDict:
   - key: event:/amb-tavern
     index: 0
@@ -235,10 +234,8 @@ MonoBehaviour:
     index: 6
   - key: event:/amb_forest
     index: 7
-  - key: snapshot:/Inside
-    index: 8
   - key: snapshot:/Outside
-    index: 9
+    index: 8
 --- !u!114 &806701643321209143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -346,33 +343,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 59500
---- !u!114 &4647272861905584499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: snapshot:/Inside
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: snapshot:/Inside
-  Guid:
-    Data1: 835996936
-    Data2: 1167558590
-    Data3: 504460949
-    Data4: 2051498258
-  Banks:
-  - {fileID: 7066848009678602385}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
 --- !u!114 &5925938277123498852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -440,10 +410,10 @@ MonoBehaviour:
   Path: Tavern-Project-FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639126259032925694
+  lastModified: 639129777202427754
   FileSizes:
   - Name: Desktop
-    Value: 5810304
+    Value: 5810464
   Exists: 1
 --- !u!114 &9130409819142047876
 MonoBehaviour:
